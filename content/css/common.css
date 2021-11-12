@@ -1,0 +1,166 @@
+html, body {height: 100%; margin: 0; padding: 0;}
+body {
+	background: #fff;
+	color: #000;
+	font-size: 14px;
+}
+td, div, p, li, blockquote, ul, ol, dl, address, input, select, textarea, button, pre {
+	font: 1em 'Trebuchet MS', sans-serif;
+}
+span {
+	font-family: 'Trebuchet MS', sans-serif;
+}
+pre {
+	font-family: 'Courier New';
+	margin: 2px 0 2px 0;
+}
+img {
+	border: 0px;
+}
+img.embedded {
+	margin: 20px;
+}
+.pagecontent img {
+	max-width: 100%;
+	height: auto;
+}
+a {
+	color: #356387;
+}
+a:hover {
+	color: #092d4a;
+}
+a > img, a.img {
+	text-decoration: none;
+}
+hr {
+	height: 0px;
+	border: 0px;
+	border-bottom: 1px solid #000;
+}
+hr.dotted {
+	border-bottom: 1px dotted #000;
+}
+p {
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+}
+p.ul-pre, p.ol-pre, p.list-pre {
+	margin-bottom: 5px;
+}
+ul, ol {
+	margin: 0px 0px 10px 0px;
+	padding: 0px 15px 3px 30px;
+}
+ul > li, ol > li {
+	margin: 0px;
+	padding: 2px;
+}
+h1 {
+	font-weight: bold;
+	margin: 0px 0px 15px;
+	padding: 0px;
+	font-size: 1.8em;
+}
+h2 {
+	margin: 15px 0px 7px;
+	padding: 0px;
+	font-size: 1.5em;
+}
+h3 {
+	margin: 15px 0px 7px;
+	padding: 0px;
+	font-size: 1.3em;
+}
+h4 {
+	margin: 15px 0px 7px;
+	padding: 0px;
+	font-size: 1.2em;
+}
+form {
+	margin: 0px;
+	padding: 0px;
+}
+label {
+	vertical-align: top;
+}
+.field-title {
+	margin: 0px 0px 1px;
+}
+.field-tip {
+	font-size: 0.8em;
+	color: #666;
+	margin: 1px;
+}
+.submit-wrap {
+	padding: 5px;
+	text-align: center;
+}
+input[type="text"], input[type="password"], textarea {
+	background: #fff;
+	color: #000;
+	border: 1px inset #bbb;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	margin: 1px;
+}
+input[type="text"], input[type="password"] {
+	font-weight: bold;
+}
+select {
+	background: #fff;
+	color: #000;
+	border: 1px inset #bbb;
+	margin: 1px;
+}
+input[type="button"], input[type="submit"], button {
+	margin: 3px;
+}
+.fixed {clear: both;}
+.hidden {display: none;}
+.top {vertical-align: top;}
+.center {text-align: center;}
+.button {cursor: pointer;}
+.pagecontent {margin: 0px 0px 30px;}
+.pagination {
+	clear: both;
+	margin: 5px 8px;
+	font-size: 0.95em;
+	color: #333;
+}
+.pagination .text {
+	float: left;
+}
+.pagination .page {
+	float: left;
+	padding-left: 5px;
+}
+.pagination .page a, .pagination .page span {
+	color: #333;
+	font-weight: bold;
+	padding: 0px 1px;
+}
+.pagination .page.first a, .pagination .page.prev a, .pagination .page.next a, .pagination .page.last a {
+	text-decoration: none;
+}
+.pagination .page a:hover {
+	color: #00e;
+}
+.pagination .page.current span {
+	color: #70e;
+}
+div.some-message {
+	background: #157146;
+	border: 1px solid #25c134;
+	color: #fff;
+	margin: 7px 0px;
+	padding: 5px;
+}
+div.error-message {
+	background: #9c0622;
+	border: 1px solid #ed4868;
+	color: #fff;
+	margin: 7px 0px;
+	padding: 5px;
+}

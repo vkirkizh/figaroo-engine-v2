@@ -1,0 +1,93 @@
+body {
+	background: #eee;
+	color: #000;
+}
+a {
+	color: blue;
+}
+a:hover {
+	color: red;
+}
+#layout {
+	clear: both;
+	width: 1000px;
+	margin: 0px auto;
+	min-height: 100%;
+	margin-bottom: -40px;
+	background: #fff;
+	border-left: 1px solid #888;
+	border-right: 1px solid #888;
+}
+* html #layout {
+	height: 100%;
+}
+#empty {
+	height: 40px;
+	clear: both;
+}
+#header {
+	clear: both;
+	padding: 5px 20px 10px;
+}
+#header h1 {
+	margin: 0px;
+	padding: 5px 10px;
+	font-size: 1.8em;
+	text-align: left;
+	color: darkblue;
+	text-shadow: #eee 1px 1px 1px;
+}
+#breadcrumbs {
+	clear: both;
+	margin: 5px 20px 10px;
+	font-size: 0.85em;
+	color: #666;
+}
+#breadcrumbs a {
+	color: #666;
+}
+#breadcrumbs a:hover {
+	color: #444;
+}
+#sidebar {
+	float: left;
+	width: 190px;
+	padding: 5px 10px 5px 19px;
+	border-right: 1px solid #888;
+}
+#sidebar .widget {
+	margin-bottom: 10px;
+}
+#sidebar .menu ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#sidebar .menu ul li.title {
+	font-weight: bold;
+}
+#sidebar .menu ul ul {
+	list-style: disc;
+	padding-left: 20px;
+}
+#content {
+	float: left;
+	width: 740px;
+	padding: 0px 20px 20px;
+}
+#footer {
+	clear: both;
+	width: 960px;
+	margin: 0px auto;
+	height: 27px;
+	padding: 12px 20px 0px;
+	margin: 0px auto;
+	text-align: center;
+	font-size: 0.85em;
+	border-top: 1px solid #eee;
+	background: #666;
+	color: #eee;
+}
+#footer a {
+	color: #fff;
+}

@@ -1,0 +1,51 @@
+Options -Indexes
+Options +FollowSymLinks
+DirectoryIndex index.php
+AddDefaultCharset UTF-8
+
+<Files favicon.ico>
+	ErrorDocument 404 x
+</Files>
+
+<FilesMatch "^(\.git|\.gitignore|composer.json|composer.lock)$">
+	Deny from all
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{HTTP_HOST} ^www\.([A-Za-z0-9_.-]+)$
+	RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [R=permanent,L]
+	RewriteRule ^(.*)\.(css|js)$ gzip.php [QSA,L]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !favicon\.ico
+	RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
+
+<IfModule mod_charset.c>
+	CharsetDisable On
+</IfModule>
+
+<IfModule mod_mime.c>
+	AddType "application/x-javascript; charset=UTF-8" .js
+	AddType "text/css; charset=UTF-8" .css
+	AddType "application/x-rar-compressed" .rar
+</IfModule>
+
+<IfModule mod_expires.c>
+	<FilesMatch "\.(ico|jpe?g|png|gif|svg|webp|js|css|cur|woff2?)$">
+		ExpiresActive On
+		<IfModule mod_headers.c>
+			Header append Cache-Control "public"
+		</IfModule>
+		ExpiresDefault "access plus 1 year"
+		FileETag MTime Size
+	</FilesMatch>
+	<FilesMatch "\.php$">
+		ExpiresActive Off
+	</FilesMatch>
+</IfModule>
+
+php_value post_max_size 256M
+php_value upload_max_filesize 256M
+# display_errors, log_errors, error_reporting -> /kernel/configs/system.php

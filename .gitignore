@@ -1,0 +1,11 @@
+.idea
+.DS_store
+/cache/smarty/cached/*
+/cache/smarty/compiled/*
+/cache/static/*
+/kernel/logs/*
+/kernel/tmp/*
+/kernel/configs/connect.php
+/files/*
+/vendor/*
+!.htaccess
